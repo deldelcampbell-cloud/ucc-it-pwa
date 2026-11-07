@@ -13,17 +13,17 @@ class AdmissionSeeder extends Seeder
             [
                 'title' => 'About the IT Programme',
                 'description' => 'The Bachelor of Science in Information Technology prepares students with knowledge and practical skills in programming, networking, databases, systems analysis and modern information technology.',
-                'application_link' => 'https://www.ucc.edu.jm/',
+                'application_link' => 'https://ucc.edu.jm/programmes/tm/bsc-in-information-technology',
             ],
             [
                 'title' => 'Admission Requirements',
-                'description' => 'Applicants should review the University of the Commonwealth Caribbean admission requirements and programme-specific entry qualifications before applying.',
-                'application_link' => 'https://www.ucc.edu.jm/',
+                'description' => 'Applicants should review the University of the Commonwealth Caribbean undergraduate admission requirements and programme-specific entry qualifications before applying.',
+                'application_link' => 'https://ucc.edu.jm/programmes/undergraduate',
             ],
             [
                 'title' => 'How to Apply',
-                'description' => 'Prospective students can visit the official UCC website to obtain information about the application process, supporting documents and admissions assistance.',
-                'application_link' => 'https://www.ucc.edu.jm/',
+                'description' => 'Prospective students can visit the official UCC undergraduate application page to begin the admissions process.',
+                'application_link' => 'https://www.ucc.edu.jm/apply/undergraduate',
             ],
             [
                 'title' => 'Contact Admissions',

@@ -9,20 +9,42 @@ class StaffSeeder extends Seeder
 {
     public function run(): void
     {
-        Staff::create([
-            'name' => 'Dr. Sample Lecturer',
-            'position' => 'Head of Department',
-            'telephone' => '876-000-0000',
-            'email' => 'hod@example.com',
-            'photo' => null,
-        ]);
+        $staffMembers = [
+            [
+                'name' => 'Ms. Sherida Levy',
+                'position' => 'Programme Officer',
+                'telephone' => '876-906-3000',
+                'email' => 'itprogrammeofficer2@ucc.edu.jm',
+                'photo' => 'images/staff/sherida-levy.jpg',
+            ],
+            [
+                'name' => 'Mr. Craig Wilmot',
+                'position' => 'Programme Officer',
+                'telephone' => '876-906-3000',
+                'email' => 'itprogofficer4@ucc.edu.jm',
+                'photo' => 'images/staff/craig-wilmot.jpg',
+            ],
+            [
+                'name' => 'Mr. Otis Osbourne',
+                'position' => 'Head of Department',
+                'telephone' => '876-906-3000',
+                'email' => 'ithod@ucc.edu.jm',
+                'photo' => 'images/staff/otis-osbourne.jpg',
+            ],
+            [
+                'name' => 'Dr. Peter Ndajah',
+                'position' => 'Dean',
+                'telephone' => '876-906-3000',
+                'email' => 'headofschoolsmathit@ucc.edu.jm',
+                'photo' => 'images/staff/peter-ndajah.jpg',
+            ],
+        ];
 
-        Staff::create([
-            'name' => 'Ms. Sample Lecturer',
-            'position' => 'Lecturer',
-            'telephone' => '876-000-0001',
-            'email' => 'lecturer@example.com',
-            'photo' => null,
-        ]);
+        foreach ($staffMembers as $staff) {
+            Staff::updateOrCreate(
+                ['email' => $staff['email']],
+                $staff
+            );
+        }
     }
 }
